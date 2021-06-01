@@ -1,7 +1,5 @@
 The main reason for using interfaces is to achieve polymorphism and to provide developers with the ability to implement interface methods in their own way in the future.
 
-In this example I will use TypeScript and I will put the repository at the end of the note
-
 Suppose we have an interface and three classes:
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6cn3ocgbfbn4n8ncc3b7.png)
@@ -47,5 +45,3 @@ So we can pass any of them to the System class as a constructor parameter. This 
 The System class is now not aware of whether it is Bluetooth or Wifi. We can even add another communication module such as Infrared, Bluetooth5 and whatever, simply by implementing the Connector interface.
 
 This is called [**Duck Typing**](https://en.wikipedia.org/wiki/Duck_typing). The connector type is now dynamic since doConnect() is just a placeholder and the developer implements it as their own.
-
-Here is the [**repository**](https://github.com/MateoCerquetella/polymorphism-ts) in case you need it and thanks for reading!
